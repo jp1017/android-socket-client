@@ -31,7 +31,7 @@ before_deploy:
 deploy:
   provider: releases
   api_key:
-    secure: [94fca83e0bdb4f6c2d1f2d7394bebee54854b0c8 ]
+    secure: 94fca83e0bdb4f6c2d1f2d7394bebee54854b0c8
   file: git_chat/build/outputs/apk/git_chat.apk
   skip_cleanup: true
   on:
