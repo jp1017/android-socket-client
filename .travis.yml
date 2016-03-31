@@ -13,26 +13,9 @@ notifications:
   email: false
 
 sudo: false
-
-git:
-  #submodules: false
-
+ 
 before_install:
-  - chmod +x gradlew
-  #- sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
-  #- git submodule init && git submodule update
+  - chmod +x gradlew
 
 script:
   - ./gradlew clean build
-
-before_deploy:
-  #- mv git_chat/build/outputs/apk/git_chat-debug.apk git_chat/build/outputs/apk/git_chat.apk
-
-deploy:
-  #provider: releases
-  #api_key:
-    #secure: 94fca83e0bdb4f6c2d1f2d7394bebee54854b0c8
-  #file: git_chat/build/outputs/apk/git_chat.apk
-  #skip_cleanup: true
-  #on:
-    #tags: true
